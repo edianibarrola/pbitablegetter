@@ -1,259 +1,66 @@
 Table Name,Field Name
-dataAppts,ServiceDate
-dataAppts,Appt_ID
-dataAppts,Person_ID
-dataAppts,Status_Hierarchy
-dataAppts,Status_Cancelled
-dataAppts,Status_Expected
-dataAppts,Status_Kept
-dataAppts,Status_NoShow
-dataAppts,Status_Pending
-dataAppts,Oracle_Mapping
-dataAppts,ReasonForCancellation
-dataAppts,ReasonForRescheduling
-dataAppts,Event_Desc
-dataAppts,ref_Date_Person
-dataAppts,Appt_Start
-dataAppts,Appt_End
-dataAppts,Appt_Duration
-dataAppts,TypeFacility2_IsFacility
-dataAppts,TypeFacility2_IsNonFacility
-dataAppts,TypeFacility3_IsTelehealth
-dataAppts,TypeFacility3_IsFacility
-dataAppts,TypeFacility3_IsNonFacility
-dataAppts,_Is Max
-dataAppts,_Max Status_Hierarchy
-dataAppts,Exclude Delivered?
-dataAppts,refPhysician
-dataAppts,Specialty
-dataAppts,Specialty_Edit
-dataAppts,SpecialtyGroup
-dataAppts,Appointments
-dataAppts,Unique Patients
-dataAppts,Kept %
-dataAppts,UniquePatientsKept
-dataCharges,refPhysician
-dataCharges,ServiceDate
-dataCharges,Person_ID
-dataCharges,IsNC
-dataCharges,Charges
-dataCharges,Oracle_Mapping
-dataCharges,ModifierCode
-dataCharges,ref_Date_Person
-dataCharges,Specialty
-dataCharges,Procedure_Code
-dataCharges,Practice
-dataCharges,Specialty_Edit
-dataCharges,SpecialtyGroup
-dataCharges,New Patients
-dataCharges,Worked Days (Provider Level)
-dataCharges,Unique Patients (Provider Level)
-dataCharges,Avg. Unique Patients/Provider/Day
-dataCharges,Total Patients
-dataCharges,% New Patients
-dataCharges,Charges Per Day
-dataCharges,Charges PerDay/Practice
-dataOpSum,Oracle_Mapping
-dataOpSum,EBITDA_MTD_CY
-dataOpSum,EBITDA_MTD_LY
-dataOpSum,EBITDA_PriorMonth
-dataOpSum,EBITDA_MTD_CY_Budget
-dataOpSum,Salary_MTD_CY
-dataOpSum,Salary_MTD_LY
-dataOpSum,Salary_PriorMonth
-dataOpSum,Salary_MTD_CY_Budget
-dataOpSum,GPSR_MTD_CY
-dataOpSum,GPSR_MTD_LY
-dataOpSum,GPSR_PriorMonth
-dataOpSum,GPSR_MTD_CY_Budget
-dataTargets,Oracle_Mapping
-dataTargets,MetricsID
-dataTargets,NewTarget
-dimDateRanges,MTD_CY_From
-dimDateRanges,MTD_CY_To
-dimDateRanges,PriorMonth_From
-dimDateRanges,PriorMonth_To
-dimDateRanges,MTD_LY_From
-dimDateRanges,MTD_LY_To
-dimDates,Date
-dimDates,WeekBeginning
-dimDates,WeekEnding
-dimDates,MonthBeginning
-dimDates,MonthEnding
-dimDates,WeekHierarchy_Year
-dimDates,WeekHierarchy_Week
-dimDates,WeekHierarchy_DayOfWeek
-dimDates,FullWeekYear
-dimDates,FullWeekMonth
-dimDates,FullWeekNum
-dimDates,IsClosed
-dimDates,Admits_EDW
-dimDates,PatientDays_EDW
-dimDates,IsBusinessDay
-dimDates,IsR3
-dimDates,IsR6
-dimDates,IsR9
-dimDates,IsR12
-dimDates,IsCY_Fiscal
-dimDates,IsLY_Fiscal
-dimDates,IsCY
-dimDates,IsLY
-dimDates,IsYTD
-dimDates,IsQTD
-dimDates,Date_PriorYear
-dimDates,IsBOM
-dimDates,IsEOM
-dimDates,IsLastClose
-dimDates,IsYTD_Calendar
-dimDates,R3_Period
-dimDates,R6_Period
-dimDates,R9_Period
-dimDates,R12_Period
-dimDates,R3_offset
-dimDates,R6_offset
-dimDates,R9_offset
-dimDates,R12_offset
-dimDates,R3_Offset_Calendar
-dimDates,R6_Offset_Calendar
-dimDates,R9_Offset_Calendar
-dimDates,R12_Offset_Calendar
-dimDates,R3_Period_Calendar
-dimDates,R6_Period_Calendar
-dimDates,R9_Period_Calendar
-dimDates,R12_Period_Calendar
-dimDates,DayName
-dimDates,ExcludeLeapYearDay
-dimDates,filter_CY
-dimDates,filter_LY
-dimDates,filter_LLY
-dimDates,filter_CurrentAndPrior_Full
-dimDates,filter_CY_Phys
-dimDates,filter_LY_Phys
-dimDates,filter_LLY_Phys
-dimDates,filter_Phys_YTD_CYLY
-dimDates,filter_Location_YTD_CYLY
-dimDates,filter_Location_CYLY
-dimDates,FullDateRange_Location
-dimDates,FullDateRange_Phys
-dimDates,FullDateRange_Census
-dimDates,DateRange_PowerApps
-dimDates,DateRange_PowerAppsLY
-dimDates,IsLLY_Fiscal
-dimDates,IsLLLY_Fiscal
-dimDates,IsCurrentQuarter
-dimDates,IsCurrentQuarter_AnyYear
-dimDates,IsmonthMTD
-dimDates,IsLast3FullMonths
-dimDates,DateHierarchy_Year
-dimDates,DateHierarchy_Month
-dimDates,DateHierarchy_Quarter
-dimDates,DateHierarchy_Day
-dimDates,DateHierarchy_MonthName
-dimDates,DateHierarchy_QuarterName
-dimDates,DateHierarchy_DayName_1
-dimDates,DateHierarchy_DayName_3
-dimDates,IsHoliday
-dimDates,refSequentialDay
-dimDates,CompleteWeek_Location
-dimDates,R03_PeriodEnding
-dimDates,R06_PeriodEnding
-dimDates,R09_PeriodEnding
-dimDates,R12_PeriodEnding
-dimDates,IsHolidayWeek
-dimDates,filter_CYLY
-dimDates,FullDateRange_Location_CompleteMonth
-dimDates,IsBeforeToday
-dimDates,IsCompleteMonth
-dimDates,IsLastCompleteMonth
-dimDates,IsMTD_Calendar
-dimDates,R03_Calendar_PeriodEnding
-dimDates,R06_Calendar_PeriodEnding
-dimDates,R09_Calendar_PeriodEnding
-dimDates,R12_Calendar_PeriodEnding
-dimDates,strDate
-dimDates,DateHierarchy_Period
-dimDates,numDays_Calendar
-dimDates,numDays_Business
-dimLocations_Oracle,Oracle_Mapping
-dimLocations_Oracle,LegalEntity_ID
-dimLocations_Oracle,LegalEntity_Description
-dimLocations_Oracle,Practice_ID
-dimLocations_Oracle,Practice_Description
-dimLocations_Oracle,Location_ID
-dimLocations_Oracle,Location_Description
-dimLocations_Oracle,Specialty_ID
-dimLocations_Oracle,Specialty_Description
-dimLocations_Oracle,Department_ID
-dimLocations_Oracle,Department_Description
-dimLocations_Oracle,Division
-dimLocations_Oracle,Region
-dimLocations_Oracle,Market
-dimLocations_Oracle,MarketPresident
-dimLocations_Oracle,Specialty_Group
-dimLocations_Oracle,StateAbbrev
-dimLocations_Oracle,State
-dimLocations_Oracle,StartDate
-dimLocations_Oracle,EndDate
-dimLocations_Oracle,IsPrac_00_22
-dimLocations_Oracle,IsPrac_11_22
-dimLocations_Oracle,IsHS_Topside
-dimLocations_Oracle,Prac00_22andTopsideHS
-dimLocations_Oracle,Prac11_22andTopsideHS
-dimLocations_Oracle,IsGA
-dimLocations_Oracle,SameUnitStatus_R12
-dimLocations_Oracle,IsTelehealth
-dimLocations_Oracle,HasBDModel
-dimLocations_Oracle,HospCode
-dimLocations_Oracle,FilterPracticeID
-dimLocations_Oracle,Market_EDW
-dimLocations_Oracle,Market_Edit
-dimLocations_Oracle,IsOverhead
-dimLocations_Oracle,LocationFilter
-dimLocations_Oracle,LocationFilter_Expanded
-dimLocations_Oracle,Region_EDW
-dimLocations_Oracle,Practice_Merge
-dimLocations_Oracle,Specialty_Description_original
-dimLocations_Oracle,Specialty_Group_original
-dimLocations_Oracle,State_Edit
-dimLocations_Oracle,StateAbbrev_Edit
-dimLocations_Oracle,MarketDirector
-dimLocations_Oracle,PracticeGroup
-dimLocations_Oracle,Location_Merge
-dimLocations_Oracle,HS_Type
-dimLocations_Oracle,TaxID
-dimLocations_Oracle,HospitalSystem
-dimLocations_Oracle,HospitalSubSystem
-dimLocations_Oracle,Territory_Level1
-dimLocations_Oracle,Territory_Level2
-dimLocations_Oracle,Specialty_Edit
-dimLocations_Oracle_Alt,Practice_ID
-dimLocations_Oracle_Alt,Oracle_Mapping
-dimLocations_Oracle_Alt,Practice_Description
-dimLocations_Oracle_Alt,Specialty_Description
-dimMetrics,refBatch
-dimMetrics,idxSort
-dimMetrics,MetricName
-dimMetrics,SortMetricName
-dimMetrics,IsCalc
-dimMetrics,refFormat
-dimMetrics,srcMetricType
-dimMetrics,srcMetricName
-dimMetrics,CurrentPeriod_val
-dimMetrics,LastYear_val
-dimMetrics,LastMonth_val
-dimMetrics,Target_val
-dimMetrics,CurrentPeriod_fmt
-dimMetrics,LastYear_fmt
-dimMetrics,LastMonth_fmt
-dimMetrics,Target_fmt
-dimMetrics,VarianceToPriorMonth_fmt
-dimMetrics,VarianceToPriorYear
-dimMetrics,Benchmark_val
-dimMetrics,Benchmark_fmt
-dimMetrics,VarianceToBenchmark_fmt
-dimMetrics,VarianceToBenchmarkPercent
-dimMetrics,VarianceToTarget_val
-dimMetrics,VarianceToTarget_fmt
-dimMetrics,VarianceToBenchmark_val
-dimMetrics,VarianceToPriorMonth_val
-dimMetrics,VarianceToPriorYear_val
+rpt_RVU_Expanded,Procedure_Code
+rpt_RVU_Expanded,CPT_Modifier_Code
+rpt_RVU_Expanded,refProcedure
+rpt_RVU_Expanded,Units
+rpt_RVU_Expanded,Oracle_Mapping
+rpt_RVU_Expanded,Work_EDW_Service_UnAdj
+rpt_RVU_Expanded,wRVU_Service
+rpt_RVU_Expanded,Service_Year
+rpt_RVU_Expanded,refPhysician
+rpt_RVU_Expanded,Provider_Specialty
+rpt_RVU_Expanded,Service_Month_Begining
+rpt_RVU_Expanded,Charges
+rpt_RVU_Expanded,Payments
+rpt_RVU_Expanded,Allowables
+rpt_RVU_Expanded,IsNC
+rpt_RVU_Expanded,Total_RVU_UnAdj
+rpt_RVU_Expanded,Total RVU (Global)
+rpt_RVU_Expanded,Total_RVU_Global
+rpt_RVU_Expanded,Average wRVU by Day
+rpt_RVU_Expanded,DayCount
+rpt_RVU_Expanded,Average wRVU by Month
+rpt_RVU_Expanded,Average wRVU by Week
+rpt_RVU_Expanded,Total wRVUs Service
+rpt_RVU_Expanded,50th Percentile
+rpt_RVU_Expanded,75th Percentile
+rpt_RVU_Expanded,Average wRVU
+rpt_RVU_Expanded,MonthCount
+rpt_RVU_Expanded,WeekCount
+UltiPro_PediatrixAndObstetrixReport,Employee Number
+UltiPro_PediatrixAndObstetrixReport,First Name
+UltiPro_PediatrixAndObstetrixReport,Last Name
+UltiPro_PediatrixAndObstetrixReport,Seniority Date
+UltiPro_PediatrixAndObstetrixReport,Supervisor Employee Number
+UltiPro_PediatrixAndObstetrixReport,"Supervisor Name (Last Suffix, First MI)"
+UltiPro_PediatrixAndObstetrixReport,Employment Status Code
+UltiPro_PediatrixAndObstetrixReport,Age (Years)
+UltiPro_PediatrixAndObstetrixReport,Gender
+UltiPro_PediatrixAndObstetrixReport,Ethnicity
+UltiPro_PediatrixAndObstetrixReport,Last Hire Date
+UltiPro_PediatrixAndObstetrixReport,Practice
+UltiPro_PediatrixAndObstetrixReport,PAU Code
+UltiPro_PediatrixAndObstetrixReport,PAU
+UltiPro_PediatrixAndObstetrixReport,Location Code
+UltiPro_PediatrixAndObstetrixReport,Location
+UltiPro_PediatrixAndObstetrixReport,Project
+UltiPro_PediatrixAndObstetrixReport,Business Unit
+UltiPro_PediatrixAndObstetrixReport,Termination Date
+UltiPro_PediatrixAndObstetrixReport,Termination Type
+UltiPro_PediatrixAndObstetrixReport,Employment Type
+UltiPro_PediatrixAndObstetrixReport,Termination Reason
+UltiPro_PediatrixAndObstetrixReport,Full/Part Time Code
+UltiPro_PediatrixAndObstetrixReport,Job Family
+UltiPro_PediatrixAndObstetrixReport,Job Code
+UltiPro_PediatrixAndObstetrixReport,Job
+UltiPro_PediatrixAndObstetrixReport,Scheduled Work Hours
+UltiPro_PediatrixAndObstetrixReport,Pay Frequency
+UltiPro_PediatrixAndObstetrixReport,Company Code
+UltiPro_PediatrixAndObstetrixReport,Home Company Code
+UltiPro_PediatrixAndObstetrixReport,Employee Email
+UltiPro_PediatrixAndObstetrixReport,Pay Group Code
+UltiPro_PediatrixAndObstetrixReport,Org Level 3 GL Segment
+Yearly_Summary_Provider_Specialty,Service_Year
+Yearly_Summary_Provider_Specialty,Provider.Specialty_Description
+Yearly_Summary_Provider_Specialty,wRVUs
+Yearly_Summary_Provider_Specialty,Service_Month_Begining
