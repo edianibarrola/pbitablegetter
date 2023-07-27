@@ -1,21 +1,18 @@
 import os
 import pandas as pd
 
-# Put all the csvs into the input folder.
-# then run this to combine them.
 
-# if you need to rip the html use pbitableripper.py with the html from the site.
 
 
 
 # Function to read and merge CSV files in the input folder
 def merge_csv_files(input_folder):
-    dataset_name = input_folder.split(os.path.sep)[-1]
     dataframes = []
     
     for filename in os.listdir(input_folder):
         if filename.endswith(".csv"):
             filepath = os.path.join(input_folder, filename)
+            dataset_name = filename.split(".csv")[0]  # Extract dataset name from the file name
             df = pd.read_csv(filepath)
             df['Dataset Name'] = dataset_name
             dataframes.append(df)
@@ -33,8 +30,8 @@ if __name__ == "__main__":
     
     try:
         result_df = merge_csv_files(input_folder)
-        output_filename = "All Datasets Tables and Columns.csv"
-        result_df.to_csv(output_filename,index=False)
-        print(f"data merged and saved")
+        output_filename = "all_Dataset_Tables_and_Columns.csv"
+        result_df.to_csv(output_filename, index=False)
+        print(f"Data merged and saved to '{output_filename}'.")
     except ValueError as e:
         print(e)
