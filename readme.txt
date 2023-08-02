@@ -33,3 +33,9 @@ python csvtotable.py   (in terminal)
 
 this will create a merged csv with all the files that you added to the input folder.
 Download that new file and you are done.  
+
+
+
+-------- finaljoiner.py  -------
+this will take the output csvs with the report-datasetname column, and combine them into a final table, while separating the two values into two columns.
+

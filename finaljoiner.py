@@ -14,7 +14,9 @@ def process_csv_files(input_folder, output_file):
             df = pd.read_csv(filepath)
 
             # Separate the values in the "Dataset Name" column
-            df[['Workspace', 'Dataset Name']] = df['Dataset Name'].str.split('-', n=1, expand=True)
+            df[['Workspace Name', 'Dataset Name']] = df['Dataset Name'].str.split('-', n=1, expand=True)
+            df['Workspace Name'] = df['Workspace Name'].str.strip()
+            df['Dataset Name'] = df['Dataset Name'].str.strip()
 
             # Append the DataFrame to the combined_data list
             combined_data.append(df)
@@ -31,7 +33,7 @@ if __name__ == "__main__":
     input_folder = "input"
 
     # Set the output file name for the combined CSV
-    output_file = "AllDatasetTablesAndColumns.csv"
+    output_file = "DatasetTablesAndColumns.csv"
 
     # Call the function to process the CSV files and combine them
     process_csv_files(input_folder, output_file)
